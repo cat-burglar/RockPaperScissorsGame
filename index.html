@@ -3,16 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Rock Paper Scissors Game</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
 		<h1>Rock Paper Scissors</h1>
 	</header>
+	
+	
 	<div class="score-board">
-		<div id="user-label" class="badge">user</div>
+		<span id="player-move"> Rock </span>
+		<div id="player-label" class="badge">player</div>
 		<div id="enemy-label" class="badge">enemy</div>
-		<span id="user-score"> 0 </span>:<span id="enemy-score"> 0 </span>
+		<span id="player-score"> 0 </span> : <span id="enemy-score"> 0 </span>
+		<span id="enemy-move"> Rock </span>
 	</div>
-This is a game	
+	
+
+	<div class="result">
+		<p>Paper covers rock. You win!</p>
+	</div>
+	<div class="choices">
+		<div id="rock" class="choice">
+			<img src="images/rock.png" alt="rock">
+		</div>
+		<div id="paper" class="choice">
+			<img src="images/paper.png" alt="paper">
+		</div>
+		<div id="scissors" class="choice">
+			<img src="images/scissors.png" alt="scissors">
+		</div>
+	</div>
+
+	<p id="action-message"> Make your move! </p>
+	<script src="app.js" charset="UTF-8"></script>
 </body>
 </html>
